@@ -730,11 +730,14 @@
 			margin-bottom: 1.5em;
 		}
 
+			#main .avatar #profile-pic{
+				width: 10rem;
+			}
+
 			#main .avatar img {
 				display: block;
 				margin: 0 auto;
 				border-radius: 100%;
-				width: 5rem;
 				box-shadow: 0 0 0 1.5em #ffffff;
 			}
 
@@ -760,6 +763,7 @@
 
 				#main .avatar:before {
 					left: -2em;
+					width: calc(100% + 4em);
 				}
 
 		}
