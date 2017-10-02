@@ -730,13 +730,9 @@
 			margin-bottom: 1.5em;
 		}
 
-			#profile-pic{
-				width: 10rem;
-			}
-
 			#main .avatar img {
 				display: block;
-				width: 10rem;
+				width: 10rem;W
 				margin: 0 auto;
 				border-radius: 100%;
 				box-shadow: 0 0 0 1.5em #ffffff;
