@@ -27,50 +27,50 @@
 							<h1>Michael Dinh</h1>
 							<p>Fullstack Developer</p>
 						</header>
-						<!--
-						<hr />
-						<h2>Extra Stuff!</h2>
-						<form method="post" action="#">
-							<div class="field">
-								<input type="text" name="name" id="name" placeholder="Name" />
-							</div>
-							<div class="field">
-								<input type="email" name="email" id="email" placeholder="Email" />
-							</div>
-							<div class="field">
-								<div class="select-wrapper">
-									<select name="department" id="department">
-										<option value="">Department</option>
-										<option value="sales">Sales</option>
-										<option value="tech">Tech Support</option>
-										<option value="null">/dev/null</option>
-									</select>
-								</div>
-							</div>
-							<div class="field">
-								<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-							</div>
-							<div class="field">
-								<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
-							</div>
-							<div class="field">
-								<label>But are you a robot?</label>
-								<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
-								<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
-							</div>
-							<ul class="actions">
-								<li><a href="#" class="button">Get Started</a></li>
-							</ul>
-						</form>
-						<hr />
-						-->
-						<footer>
+											
+					<footer>
 							<ul class="icons">
-								<li><a href="https://github.com/mkdinh" class="fa-github-alt">Github</a></li>
-								<li><a href="https://www.linkedin.com/in/michael-k-dinh/" class="fa-linkedin">LinkedIn</a></li>
-								<li><a href="mailto:mkdinh94@gmail.com" class="fa-envelope">Email</a></li>
+								<li><a href="https://github.com/mkdinh" target='_blank' data-name='GitHub' class="fa-github-alt btn-info" id='btn-gitHub'>Github</a></li>
+								<li><a href="https://www.linkedin.com/in/michael-k-dinh/"  target='_blank' data-name='LinkedIn' class="fa-linkedin btn-info" id='btn-linkedIn'>LinkedIn</a></li>
+								<li><a href="mailto:mkdinh94@gmail.com" data-name='mkdinh94@gmail.com' class="fa-envelope btn-info" id='btn-email'>Email</a></li>
+								<li><a href="#/" data-name='Portfolio' class="fa-tasks btn-info" id='btn-portfolio'>Portfolio</a></li>
+								<div id='btn-name'></div>
 							</ul>
 						</footer>
+					</section>
+						
+					<section id='portfolio'>
+						
+						<div id='preview-name'></div>
+
+						<div class='preview-wrapper' data-name='Lords of Might'>
+							<a href='https://stormy-citadel-20684.herokuapp.com/' target='_blank'>
+								<img src='./images/LoM.png' class='preview' />
+							</a>
+						</div>
+
+						<div class='preview-wrapper' data-name='Night by Night'>
+							<a href='https://mkdinh.github.io/Night-by-Night/' target='_blank'>
+								<img src='./images/NightByNight.png' class='preview' />
+							</a>
+						</div>
+
+						<div class='preview-wrapper' data-name='Burger Sequelized'>
+							<a href='https://thawing-journey-32255.herokuapp.com/' target='_blank'>
+								<img src='./images/burgerSequelize.png' class='preview'/>
+							</a>
+						</div>
+
+						<div class='preview-wrapper' data-name='Star War RPG'>
+							<a href='https://mkdinh.github.io/star-wars-RPG/' target='_blank'>
+								<img src='./images/StarWar.png' class='preview'/>
+							</a>
+						</div>
+
+						<div class='portfolio-back'>
+							<i class="fa fa-arrow-circle-o-left large" id='back-btn' aria-hidden="true"></i>
+						</div>
+
 					</section>
 
 				<!-- Footer -->
@@ -84,6 +84,8 @@
 
 		<!-- Scripts -->
 			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+			<script src='./assets/js/script.js'></script>
 			<script>
 				if ('addEventListener' in window) {
 					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });

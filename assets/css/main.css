@@ -750,6 +750,57 @@
 				background: #c8cccf;
 			}
 
+			#main #btn-name{
+				height: 1rem;
+				margin-top: 0.5rem;
+			}
+
+		#portfolio {
+			display: none;
+		}
+
+		#portfolio #preview-name{
+			height: 3rem;
+			font-size: 2rem;
+			text-align: center;
+			margin-bottom: 1rem;
+		}
+				
+		#portfolio .preview-wrapper{
+			width: 150px;
+			height: 150px;
+			display: inline-block;
+			margin: 1rem;
+			transition: box-shadow 500ms;
+		}
+
+		#portfolio .preview-wrapper:hover{
+			filter: drop-shadow(0px 0px 30px white);
+		}
+		
+		#portfolio .preview{
+			width: 150px;
+			display: inline-block;
+			border: 1px solid grey;
+			border-radius: 0.5rem;
+		}
+
+		#portfolio .portfolio-back{
+			text-align: center;
+		}
+
+		#portfolio #back-btn{
+			margin-top: 3rem;
+			font-size: 4rem;
+			transition: color 400ms;
+		}
+
+		#portfolio #back-btn:hover{
+			color: white;
+		}
+		
+
+
 		@media screen and (max-width: 480px) {
 
 			#main {
