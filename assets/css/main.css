@@ -744,8 +744,8 @@
 				display: block;
 				position: absolute;
 				top: 50%;
-				left: -3em;
-				width: calc(100% + 6em);
+				left: -2em;
+				width: calc(100% + 2em);
 				height: 1px;
 				z-index: -1;
 				background: #c8cccf;
@@ -817,7 +817,7 @@
 		#portfolio .preview{
 			width: 150px;
 			display: inline-block;
-			border: 1px solid grey;
+			border: 1px solid black;
 			border-radius: 0.5rem;
 		}
 
