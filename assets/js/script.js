@@ -1,8 +1,13 @@
 let btnPortfolio = $('#btn-portfolio');
+let btnSkills = $('#btn-skills');
+let btnBio = $('#btn-bio');
 
-btnPortfolio.on('click', () => {
+let btnPage = $('.btn-page');
+
+btnPage.on('click', (ev) => {
+    let page = $(ev.currentTarget).attr('data-page');
     $('#main').hide();
-    $('#portfolio').fadeIn(1000);
+    $(`#${page}`).fadeIn(1000);
 });
 
 $('.btn-info').hover( (ev) => {
@@ -20,7 +25,8 @@ $('.preview-wrapper').hover((ev) => {
     $('#preview-name').text(name)
 }, (ev) => { $('#preview-name').text(name)});
 
-$('#back-btn').on('click', ev => {
-    $('#portfolio').hide();
+$('.back-btn').on('click', ev => {
+    let page = $(ev.currentTarget).attr('data-page');
+    $(`#${page}`).hide();
     $('#main').fadeIn(1000);
 })

@@ -24,21 +24,69 @@
 					<section id="main">
 						<header>
 							<span class="avatar"><img src="images/profile.png" id='profile-pic' alt="" /></span>
+						</header>
+						
+						<div id='index'>
 							<h1>Michael Dinh</h1>
 							<p>Fullstack Developer</p>
-						</header>
-											
-					<footer>
-							<ul class="icons">
-								<li><a href="https://github.com/mkdinh" target='_blank' data-name='GitHub' class="fa-github-alt btn-info" id='btn-gitHub'>Github</a></li>
-								<li><a href="https://www.linkedin.com/in/michael-k-dinh/"  target='_blank' data-name='LinkedIn' class="fa-linkedin btn-info" id='btn-linkedIn'>LinkedIn</a></li>
-								<li><a href="mailto:mkdinh94@gmail.com" data-name='mkdinh94@gmail.com' class="fa-envelope btn-info" id='btn-email'>Email</a></li>
-								<li><a href="#/" data-name='Portfolio' class="fa-tasks btn-info" id='btn-portfolio'>Portfolio</a></li>
-								<div id='btn-name'></div>
-							</ul>
-						</footer>
+												
+							<footer>
+								<ul class="icons">
+									<li><a href="#/" data-page='bio' data-name='Biography' class="fa-user btn-page btn-info" id='btn-bio'>Biography</a></li>
+									<li><a href="#/" data-page='skills' data-name='Skills' class="fa-gavel btn-page btn-info" id='btn-skills'>Skills</a></li>
+									<li><a href="#/" data-page='portfolio' data-name='Portfolio' class="fa-tasks btn-page btn-info" id='btn-portfolio'>Portfolio</a></li>
+								</ul>
+
+								<ul class="icons">
+									<li><a href="https://github.com/mkdinh" target='_blank' data-name='GitHub' class="fa-github-alt btn-info" id='btn-gitHub'>Github</a></li>
+									<li><a href="mailto:mkdinh94@gmail.com" data-name='mkdinh94@gmail.com' class="fa-envelope btn-info" id='btn-email'>Email</a></li>
+									<li><a href="https://www.linkedin.com/in/michael-k-dinh/"  target='_blank' data-name='LinkedIn' class="fa-linkedin btn-info" id='btn-linkedIn'>LinkedIn</a></li>
+									<div id='btn-name'></div>
+								</ul>
+							</footer>
+						</div>
 					</section>
+
+					<section id='skills'>
+						<header>
+							<span class="avatar"><img src="images/profile.png" id='profile-pic' alt="" /></span>
+						</header>
+						<h2>Skills</h2>
+						<p>HTML5  CSS3  Javascript  Perl</p>
+						<p>Bootstrap  MaterializeCSS  Firebase</p>
+						<p>ReactJS  NodeJS  ExpressJS  Jquery</p>
+						<p>MySQL  NoSQL  Sequelize  MongoDB  Mongoose</p>
+						<p>Media Queries  APIs  AJAX  REST</p>
+						<p>GIT  WebSocket.IO  PhaserJS MatLab</p>
 						
+						<div class='skills-back'>
+							<a href='#/'>
+								<i class="fa fa-arrow-circle-o-left large back-btn" data-page="skills" aria-hidden="true"></i>
+							</a>
+						</div>
+					</section>
+
+					<section id='bio'>
+							<header>
+								<span class="avatar"><img src="images/profile.png" id='profile-pic' alt="" /></span>
+							</header>
+
+							<p class="text-justify">
+							Hello! My name is Michael, and I am from Durham, North Carolina. I attended the University of North Carolina at Chapel Hill (2013-2017) and graduated with a Bachelor Degree in Biochemistry. During my times at UNC-CH, I was part of the AFROTC program and held various officer positions in the Carolina Boxing Club. I am currently working as a research assistant in the physical chemistry department at UNC-CH, focusing on studying the solute-solvent interactions on non-radiactive relaxation of titanium(IV) catechol in solvent. In my free time, my interest includes going on trail runs and honing my cooking skill.</p>
+							<p class="text-justify">
+							My interest in programming started when I first took a programming class for chemistry students (COMP 116) at UNC. There, i learned how to incorporate programming in data analysis using programs such as MatLab. I later used this knowledge in my job as an undergraduate assistant in the physical chemistry department, where I perform molecular dynamics on various molecules and mining for useful data. My hope is to improve my programming skill and broaden my knowledge in the world of computer science.
+							</p>
+							<p>
+							Current I am a full stack developer with an interest in back-end development. I love short practical approaches to programming, and the shorter the code, the better. However, I would also explore non-conventional approaches to writing a code, which sometimes would lead me down a rabbit hole into the developer wonderland. But in doing so, I get a stronger sense of what is out there and the wonderful technologies that available at my disposal.
+							</p>
+
+							<div class='skills-back'>
+								<a href='#/'>
+									<i class="fa fa-arrow-circle-o-left large back-btn" data-page="bio" aria-hidden="true"></i>
+								</a>
+							</div>
+					</section>
+
 					<section id='portfolio'>
 						
 						<div id='preview-name'></div>
@@ -74,11 +122,11 @@
 						</div>
 
 						<div class='portfolio-back'>
-							<i class="fa fa-arrow-circle-o-left large" id='back-btn' aria-hidden="true"></i>
+							<i class="fa fa-arrow-circle-o-left large back-btn" data-page="portfolio" aria-hidden="true"></i>
 						</div>
 
 					</section>
-
+					
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="copyright">
@@ -87,6 +135,8 @@
 					</footer>
 
 			</div>
+
+
 
 		<!-- Scripts -->
 			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
