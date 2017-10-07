@@ -745,7 +745,7 @@
 				position: absolute;
 				top: 50%;
 				left: -2em;
-				width: calc(100% + 2em);
+				width: calc(100% + 4em);
 				height: 1px;
 				z-index: -1;
 				background: #c8cccf;
